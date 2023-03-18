@@ -1,0 +1,583 @@
+<div class="formaspagamento" style=" padding-top: 30px;">
+<div class="formaspag" id="formspagdad" style="width: 100%; height: 80px; background-color: #ffffff; border-radius: 5px;">
+<i class="pixpag" id="pixsvg">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="#7339C9 " height="30px" viewBox="0 0 16 16"><path d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z"/><path d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z"/></svg>
+ 
+      <div class="formspag-container">
+     <span  style="font-size: 20px; font-weight: bold;">R$ <span id="pixdesconto" style="font-size: 20px; font-weight: bold;"></span></span>
+
+       
+
+
+      
+   <span class="formspag-container-desc" style="font-size: 15px;">exclusivo no PIX</span> 
+  </div>
+</i>  
+  <hr color="#eeeeee" style="width: 100%; height: 0,1px">
+  
+
+
+
+      
+  <i class="pixpag" id="cardsvg">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#7339C9" height="30px" version="1.1" id="Layer_1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path d="M0,394c0,23.5,19.1,42.7,42.7,42.7h426.7c23.5,0,42.7-19.1,42.7-42.7v-42.7H0V394z M469.3,95.3H42.7  C19.1,95.3,0,114.5,0,138v170.7h512V138C512,114.5,492.9,95.3,469.3,95.3z"/>
+</svg>
+    <div class="formspag-container">
+      
+
+      
+<a class="modal-content-cartao" id="modal-content-cartao"  style="text-decoration: underline;">mais formas de pagamento</a>
+
+
+      
+<div class="modal-container">
+  <div id="modal" style="display: none;">
+    <div class="modal-background"></div>
+      
+    <div class="modal-content" style="overflow-y: scroll;">
+      <p style="    font-size: 25px; font-weight: bold; display: flex; justify-content: center;">FORMAS DE PAGAMENTO</p>
+      <div class="modaliconsmaster" id="modaliconsmaster" style="display: flex; overflow: auto;     justify-content: space-between; margin-left: 60px; margin-right: 60px;">
+
+
+      
+      <a class="modalcardicon" id="modalcardicon" data-target="modal-cartao" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#7339C9" height="30px" version="1.1" id="Layer_1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path d="M0,394c0,23.5,19.1,42.7,42.7,42.7h426.7c23.5,0,42.7-19.1,42.7-42.7v-42.7H0V394z M469.3,95.3H42.7  C19.1,95.3,0,114.5,0,138v170.7h512V138C512,114.5,492.9,95.3,469.3,95.3z"/>
+</svg>
+      <div class="titlemodalbutton"  id="modalcartaobutton" style=" color:#7339C9; font-weight: bold;">CARTÃO</div></a>
+
+      
+      
+        <a class="modalboletoicon" id="modalboletoicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BCB6C4;}
+</style>
+<g>
+	<rect y="94.103" class="st0" width="48.569" height="323.795"/>
+	<rect x="72.854" y="94.103" class="st0" width="24.284" height="323.795"/>
+	<polygon class="st0" points="121.423,94.103 121.423,417.897 145.708,417.897 169.992,417.897 169.992,94.103 145.708,94.103  "/>
+	<polygon class="st0" points="194.277,94.103 194.277,417.897 218.561,417.897 242.846,417.897 242.846,94.103 218.561,94.103  "/>
+	<rect x="267.13" y="94.103" class="st0" width="24.285" height="323.795"/>
+	<polygon class="st0" points="339.984,94.103 315.7,94.103 315.7,417.897 339.984,417.897 364.269,417.897 388.554,417.897    388.554,94.103 364.269,94.103  "/>
+	<polygon class="st0" points="412.838,94.103 412.838,417.897 437.122,417.897 462.083,417.897 462.083,94.103 437.122,94.103  "/>
+	<rect x="487.044" y="94.103" class="st0" width="24.956" height="323.795"/>
+</g>
+</svg>
+      <div class="titlemodalicon"  id="modalboletobutton" style=" color:#BCB6C4; font-weight: bold;">BOLETO</div></a>
+
+
+      
+
+      <a class="modalpixicon" id="boletoselect" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="#BCB6C4 " height="30px" viewBox="0 0 16 16"><path d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z"/><path d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z"/></svg> 
+      <div class="titlemodalicon"  id="modalpixbutton" style=" color:#BCB6C4; font-weight: bold;">PIX</div></a>  
+
+
+
+
+
+
+
+
+
+      
+      </div>  {% comment %} FIM DIV ICONS {% endcomment %}
+    
+
+<div class="listaparcelasmodal" id="listaparcelasmodal" style="display: flex; flex-direction: column; -webkit-box-align: center; align-items: center; ">
+
+<ul class="listaparcelasmodal-list" style="width: 100%; display: flex; flex-direction:column; margin-top: 2rem; padding-right: 0.5rem; max-height: 30rem; ">
+  <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;  color:#7339C9" id="listmodal1">1X sem juros de R$<span id="val-em1"></span></span>
+    <span  style=" color:#7339C9">R$ <span id="val-total-em1"></span></span>
+  </li>
+  <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem; color:#7339C9"id="listmodal2">2X sem juros de R$<span id="val-em2"></span></span>
+    <span style=" color:#7339C9">R$ <span id="val-total-em2"></span></span>
+  </li>
+   <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5 ">
+    <span style="font-size: 1rem; line-height: 1.5rem; color:#7339C9" id="listmodal3">3X sem juros de R$<span id="val-em3"></span></span>
+    <span style=" color:#7339C9">R$ <span id="val-total-em3"></span></span>
+  </li>
+   <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem; color:#7339C9" id="listmodal4">4X sem juros de R$<span id="val-em4"></span></span>
+    <span style=" color:#7339C9">R$ <span id="val-total-em4"></span></span>
+  </li>
+ <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal5">5X com juros de R$<span id="val-em5"></span></span>
+    <span>R$ <span id="val-total-em5"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal6">6X com juros de R$<span id="val-em6"></span></span>
+    <span>R$ <span id="val-total-em6"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal7">7X com juros de R$<span id="val-em7"></span></span>
+    <span>R$ <span id="val-total-em7"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal8">8X com juros de R$<span id="val-em8"></span></span>
+    <span>R$ <span id="val-total-em8"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal9">9X com juros de R$<span id="val-em9"></span></span>
+    <span>R$ <span id="val-total-em9"></span></span>
+  </li>
+       <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal10">10X com juros de R$<span id="val-em10"></span></span>
+    <span>R$ <span id="val-total-em10"></span></span>
+  </li>
+             <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify;justify-content: space-between;padding: 0.5rem 1rem; background-color: #f2f2f5">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal11">11X com juros de R$<span id="val-em11"></span></span>
+    <span>R$ <span id="val-total-em11"></span></span>
+  </li>
+             <li style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: justify; margin-bottom: 2rem; justify-content: space-between;padding: 0.5rem 1rem; ">
+    <span style="font-size: 1rem; line-height: 1.5rem;" id="listmodal12">12X com juros de R$<span id="val-em12"></span></span>
+    <span>R$ <span id="val-total-em12"></span></span>
+  </li>
+      
+      
+      
+      
+      
+      </ul>
+
+<script>
+// Selecionando o elemento com a classe "price--highlight" e obtendo o valor dele
+const priceElement = document.querySelector('.price--highlight');
+const price = parseFloat(priceElement.textContent.replace('R$', '').replace(',', '.'));
+
+// Selecionando os elementos para exibir os valores calculados
+const valEm1 = document.querySelector('#val-em1');
+const valTotalEm1 = document.querySelector('#val-total-em1');
+
+// Calculando o valor para 1x sem juros
+const val1xSemJuros = price.toFixed(2);
+const totalSemJuros = val1xSemJuros;
+valEm1.textContent = val1xSemJuros;
+valTotalEm1.textContent = totalSemJuros;
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm2 = document.querySelector('#val-em2');
+const valTotalEm2 = document.querySelector('#val-total-em2');
+
+// Calculando o valor para 2x com 5% de juros
+const val2xSemJuros = (price * 1 / 2).toFixed(2);
+const totalSemJuros2x = (price * 1).toFixed(2);
+valEm2.textContent = val2xSemJuros;
+valTotalEm2.textContent = totalSemJuros2x;
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm3 = document.querySelector('#val-em3');
+const valTotalEm3 = document.querySelector('#val-total-em3');
+
+
+const val3xSemJuros = (price * 1 / 3).toFixed(2);
+const totalSemJuros3x = (price * 1 * 1 * 1).toFixed(2);
+valEm3.textContent = val3xSemJuros;
+valTotalEm3.textContent = totalSemJuros3x;
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm4 = document.querySelector('#val-em4');
+const valTotalEm4 = document.querySelector('#val-total-em4');
+
+
+const val4xSemJuros = (price * 1 / 4).toFixed(2);
+const totalSemJuros4x = (price * 1 * 1 * 1 * 1).toFixed(2);
+valEm4.textContent = val4xSemJuros;
+valTotalEm4.textContent = totalSemJuros4x;       
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm5 = document.querySelector('#val-em5');
+const valTotalEm5 = document.querySelector('#val-total-em5');
+
+// Calculando o valor para 5x com 12.32% de juros
+const interestRate5x = 1.1232;
+const val5xComJuros = (price * interestRate5x / 5).toFixed(2);
+const totalComJuros5x = (price * interestRate5x).toFixed(2);
+valEm5.textContent = val5xComJuros;
+valTotalEm5.textContent = totalComJuros5x;
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm6 = document.querySelector('#val-em6');
+const valTotalEm6 = document.querySelector('#val-total-em6');
+
+// Calculando o valor para 6x com 13.65% de juros
+const interestRate6x = 1.1365;
+const val6xComJuros = (price * interestRate6x / 6).toFixed(2);
+const totalComJuros6x = (price * interestRate6x).toFixed(2);
+valEm6.textContent = val6xComJuros;
+valTotalEm6.textContent = totalComJuros6x;
+      
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm7 = document.querySelector('#val-em7');
+const valTotalEm7 = document.querySelector('#val-total-em7');
+
+// Calculando o valor para 7x com 14,72% de juros
+const interestRate7x = 1.1472;
+const val7xComJuros = (price * interestRate7x / 7).toFixed(2);
+const totalComJuros7x = (price * interestRate7x).toFixed(2);
+valEm7.textContent = val7xComJuros;
+valTotalEm7.textContent = totalComJuros7x;
+
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm8 = document.querySelector('#val-em8');
+const valTotalEm8 = document.querySelector('#val-total-em8');
+
+// Calculando o valor para 8x com 16,23% de juros
+const interestRate8x = 1.1623;
+const val8xComJuros = (price * interestRate8x / 8).toFixed(2);
+const totalComJuros8x = (price * interestRate8x).toFixed(2);
+valEm8.textContent = val8xComJuros;
+valTotalEm8.textContent = totalComJuros8x;      
+      
+      
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm9 = document.querySelector('#val-em9');
+const valTotalEm9 = document.querySelector('#val-total-em9');
+
+// Calculando o valor para 9x com 17,71% de juros
+const interestRate9x = 1.1771;
+const val9xComJuros = (price * interestRate9x / 9).toFixed(2);
+const totalComJuros9x = (price * interestRate9x).toFixed(2);
+valEm9.textContent = val9xComJuros;
+valTotalEm9.textContent = totalComJuros9x;       
+
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm10 = document.querySelector('#val-em10');
+const valTotalEm10 = document.querySelector('#val-total-em10');
+
+// Calculando o valor para 10x com 17,71% de juros
+const interestRate10x = 1.2491;
+const val10xComJuros = (price * interestRate10x / 10).toFixed(2);
+const totalComJuros10x = (price * interestRate10x).toFixed(2);
+valEm10.textContent = val10xComJuros;
+valTotalEm10.textContent = totalComJuros10x;     
+
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm11 = document.querySelector('#val-em11');
+const valTotalEm11 = document.querySelector('#val-total-em11');
+
+// Calculando o valor para 11x com 17,71% de juros
+const interestRate11x = 1.2011;
+const val11xComJuros = (price * interestRate11x / 11).toFixed(2);
+const totalComJuros11x = (price * interestRate11x).toFixed(2);
+valEm11.textContent = val11xComJuros;
+valTotalEm11.textContent = totalComJuros11x;     
+
+
+// Selecionando os elementos para exibir os valores calculados com juros
+const valEm12 = document.querySelector('#val-em12');
+const valTotalEm12 = document.querySelector('#val-total-em12');
+
+// Calculando o valor para 12x com 17,71% de juros
+const interestRate12x = 1.2162;
+const val12xComJuros = (price * interestRate12x / 12).toFixed(2);
+const totalComJuros12x = (price * interestRate12x).toFixed(2);
+valEm12.textContent = val12xComJuros;
+valTotalEm12.textContent = totalComJuros12x;          
+ 
+// Selecionando o elemento para exibir o valor calculado com desconto
+const pixdesconto = document.querySelector('#pixdesconto');
+
+
+      
+// Calculando o valor com desconto de 5% PIX
+const valComDesconto = (price * 0.95).toFixed(2);
+pixdesconto.textContent = valComDesconto;
+      
+      
+      </script>
+
+
+      
+
+      
+<script>
+  var maisFormasPagamento = document.getElementById("modal-content-cartao");
+  var modal = document.getElementById("modal");
+  var modalBackground = modal.querySelector(".modal-background");
+
+
+      
+  maisFormasPagamento.addEventListener("click", function() {
+modal.style.display = "block";
+document.body.classList.add("dark-background"); // adiciona a classe para escurecer o fundo do body
+});
+
+modalBackground.addEventListener("click", function(event) {
+if (event.target === modalBackground) {
+modal.style.display = "none";
+document.body.classList.remove("dark-background"); // remove a classe para clarear o fundo do body
+}
+});  
+</script> 
+
+
+
+<script>
+  const modalCardIcon = document.querySelector('#modalcardicon');
+  const modalBoletoIcon = document.querySelector('#modalboletoicon');
+  const modalPixIcon = document.querySelector('#modalpixicon');
+  
+  const modalContentCard = document.querySelector('#modal-content-card');
+  const modalContentBoleto = document.querySelector('#modal-content-boleto');
+  const modalContentPix = document.querySelector('#modal-content-pix');
+
+  modalCardIcon.addEventListener('click', () => {
+    if (modalContentCard.style.display !== 'block') {
+      modalContentBoleto.style.display = 'none';
+      modalContentPix.style.display = 'none';
+      modalContentCard.style.display = 'block';
+    }
+  });
+
+  modalBoletoIcon.addEventListener('click', () => {
+    if (modalContentBoleto.style.display !== 'block') {
+      modalContentCard.style.display = 'none';
+      modalContentPix.style.display = 'none';
+      modalContentBoleto.style.display = 'block';
+    }
+  });
+
+  modalPixIcon.addEventListener('click', () => {
+    if (modalContentPix.style.display !== 'block') {
+      modalContentCard.style.display = 'none';
+      modalContentBoleto.style.display = 'none';
+      modalContentPix.style.display = 'block';
+    }
+  });
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    // aqui vai o código que deve ser executado após a página ter sido carregada
+  });
+</script>
+
+
+ 
+
+
+      
+</div> 
+</div>{% comment %} FIM DIV LISTA {% endcomment %}
+
+
+
+
+
+
+
+  {% comment %} SELEÇÃO BOLETO {% endcomment %}     
+  <div class="modal-content-boleto" id="modal-content-boleto" style=" display: none; overflow-y: scroll;" >
+      <p style="  font-size: 25px; font-weight: bold; display: flex; justify-content: center;">FORMAS DE PAGAMENTO BOLETO</p>
+      
+  <div class="modaliconsmaster" id="modaliconsmaster" style="display: flex; overflow: auto;     justify-content: space-between; margin-left: 60px; margin-right: 60px;">
+      
+ <a class="modalcardicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#BCB6C4" height="30px" version="1.1" id="Layer_1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path d="M0,394c0,23.5,19.1,42.7,42.7,42.7h426.7c23.5,0,42.7-19.1,42.7-42.7v-42.7H0V394z M469.3,95.3H42.7  C19.1,95.3,0,114.5,0,138v170.7h512V138C512,114.5,492.9,95.3,469.3,95.3z"/>
+</svg>
+      
+      
+      
+      <div class="titlemodalbutton"  id="modalcartaobutton" style=" color:#BCB6C4; font-weight: bold;">CARTÃO</div></a>
+
+
+      
+        <a class="modalboletoicon" id="modalboletoicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7339C9;}
+</style>
+<g>
+	<rect y="94.103" class="st0" width="48.569" height="323.795"/>
+	<rect x="72.854" y="94.103" class="st0" width="24.284" height="323.795"/>
+	<polygon class="st0" points="121.423,94.103 121.423,417.897 145.708,417.897 169.992,417.897 169.992,94.103 145.708,94.103  "/>
+	<polygon class="st0" points="194.277,94.103 194.277,417.897 218.561,417.897 242.846,417.897 242.846,94.103 218.561,94.103  "/>
+	<rect x="267.13" y="94.103" class="st0" width="24.285" height="323.795"/>
+	<polygon class="st0" points="339.984,94.103 315.7,94.103 315.7,417.897 339.984,417.897 364.269,417.897 388.554,417.897    388.554,94.103 364.269,94.103  "/>
+	<polygon class="st0" points="412.838,94.103 412.838,417.897 437.122,417.897 462.083,417.897 462.083,94.103 437.122,94.103  "/>
+	<rect x="487.044" y="94.103" class="st0" width="24.956" height="323.795"/>
+</g>
+</svg>
+     
+      
+      
+      <div class="titlemodalicon"  id="modalboletobutton" data-target="modal-pix" style=" color:#7339C9; font-weight: bold;">BOLETO</div></a>
+  
+
+      <a class="modalpixicon" id="modalpixicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="#BCB6C4 " height="30px" viewBox="0 0 16 16"><path d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z"/><path d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z"/></svg> 
+      <div class="titlemodalicon"  id="modalpixbutton" style=" color:#BCB6C4; font-weight: bold;">PIX</div></a>        
+      </div>
+   </div>
+   
+<script>
+
+</script>
+ </div>
+
+
+
+      
+
+ 
+
+  {% comment %} SELEÇÃO PIX {% endcomment %}     
+ <div class="modal-content-pix" id="modal-content-pix" style=" display: none; overflow-y: scroll;" >
+      <p style="  font-size: 25px; font-weight: bold; display: flex; justify-content: center;">FORMAS DE PAGAMENTO PIX</p>
+      
+  <div class="modaliconsmaster" id="modaliconsmaster" style="display: flex; overflow: auto;     justify-content: space-between; margin-left: 60px; margin-right: 60px;">
+      
+ <a class="modalcardicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#BCB6C4" height="30px" version="1.1" id="Layer_1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path d="M0,394c0,23.5,19.1,42.7,42.7,42.7h426.7c23.5,0,42.7-19.1,42.7-42.7v-42.7H0V394z M469.3,95.3H42.7  C19.1,95.3,0,114.5,0,138v170.7h512V138C512,114.5,492.9,95.3,469.3,95.3z"/>
+</svg>
+      
+      
+      
+      <div class="titlemodalbutton"  id="modalcartaobutton" style=" color:#BCB6C4; font-weight: bold;">CARTÃO</div></a>
+
+
+      
+        <a class="modalboletoicon" id="modalboletoicon" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BCB6C4;}
+</style>
+<g>
+	<rect y="94.103" class="st0" width="48.569" height="323.795"/>
+	<rect x="72.854" y="94.103" class="st0" width="24.284" height="323.795"/>
+	<polygon class="st0" points="121.423,94.103 121.423,417.897 145.708,417.897 169.992,417.897 169.992,94.103 145.708,94.103  "/>
+	<polygon class="st0" points="194.277,94.103 194.277,417.897 218.561,417.897 242.846,417.897 242.846,94.103 218.561,94.103  "/>
+	<rect x="267.13" y="94.103" class="st0" width="24.285" height="323.795"/>
+	<polygon class="st0" points="339.984,94.103 315.7,94.103 315.7,417.897 339.984,417.897 364.269,417.897 388.554,417.897    388.554,94.103 364.269,94.103  "/>
+	<polygon class="st0" points="412.838,94.103 412.838,417.897 437.122,417.897 462.083,417.897 462.083,94.103 437.122,94.103  "/>
+	<rect x="487.044" y="94.103" class="st0" width="24.956" height="323.795"/>
+</g>
+</svg>
+     
+      <div class="titlemodalicon"  id="modalboletobutton" style=" color:#BCB6C4; font-weight: bold;">BOLETO</div></a>
+
+      
+
+      <a class="modalpixicon" id="modalpixicon" data-target="modal-pix" style=" display:flex; flex-direction: column; height: 90px; min-width: 96px; padding: 20px 2px 8px; align-items: center; gap: 8px; font-size: 14px; position: relative; ">
+    
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#7339C9 " height="30px" viewBox="0 0 16 16"><path d="M11.917 11.71a2.046 2.046 0 0 1-1.454-.602l-2.1-2.1a.4.4 0 0 0-.551 0l-2.108 2.108a2.044 2.044 0 0 1-1.454.602h-.414l2.66 2.66c.83.83 2.177.83 3.007 0l2.667-2.668h-.253zM4.25 4.282c.55 0 1.066.214 1.454.602l2.108 2.108a.39.39 0 0 0 .552 0l2.1-2.1a2.044 2.044 0 0 1 1.453-.602h.253L9.503 1.623a2.127 2.127 0 0 0-3.007 0l-2.66 2.66h.414z"/><path d="m14.377 6.496-1.612-1.612a.307.307 0 0 1-.114.023h-.733c-.379 0-.75.154-1.017.422l-2.1 2.1a1.005 1.005 0 0 1-1.425 0L5.268 5.32a1.448 1.448 0 0 0-1.018-.422h-.9a.306.306 0 0 1-.109-.021L1.623 6.496c-.83.83-.83 2.177 0 3.008l1.618 1.618a.305.305 0 0 1 .108-.022h.901c.38 0 .75-.153 1.018-.421L7.375 8.57a1.034 1.034 0 0 1 1.426 0l2.1 2.1c.267.268.638.421 1.017.421h.733c.04 0 .079.01.114.024l1.612-1.612c.83-.83.83-2.178 0-3.008z"/></svg> 
+      <div class="titlemodalicon"  id="modalpixbutton" style=" color:#7339C9; font-weight: bold;">PIX</div></a>        
+      </div>
+   </div>
+   
+<script>
+const cardIcon = document.getElementById("modalcardicon");
+const boletoIcon = document.getElementById("modalboletoicon");
+const pixIcon = document.getElementById("modalpixicon");
+
+const cardModal = document.getElementById("modal-content-cartao");
+const boletoModal = document.getElementById("modal-content-boleto");
+const pixModal = document.getElementById("modal-content-pix");
+
+cardIcon.addEventListener("click", () => {
+  cardModal.style.display = "block";
+  boletoModal.style.display = "none";
+  pixModal.style.display = "none";
+});
+
+boletoIcon.addEventListener("click", () => {
+  cardModal.style.display = "none";
+  boletoModal.style.display = "block";
+  pixModal.style.display = "none";
+});
+
+pixIcon.addEventListener("click", () => {
+  cardModal.style.display = "none";
+  boletoModal.style.display = "none";
+  pixModal.style.display = "block";
+});
+</script>
+ </div>
+      
+       
+      
+
+
+<style>
+
+  .modal-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+      {% comment %}
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+{% endcomment %}
+}
+
+  .modal-content  {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 500px; 
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.modal-content-boleto {   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 500px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.modal-content-pix {   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 500px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden;
+  z-index: 999999;
+}
+  
+</style>   
+  </div>
+</i>  
+  <hr color="#eeeeee" style="width: 100%; height: 0,1px">
+</div>
+</div>
